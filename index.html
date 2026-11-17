@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Учебная библиотека: книги для самостоятельного обучения веб-разработке." />
+    <title>Доступная библиотека</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
+    <header class="header">
+      <a class="header__brand" href="#top" aria-label="Доступная библиотека — на главную">Библиотека</a>
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a href="#books">Книги</a>
+        <a href="#about">О проекте</a>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <img src="./images/book.svg" class="hero__image" alt="Иллюстрация раскрытой учебной книги" />
+        <div class="hero__content">
+          <p class="eyebrow">Учебная библиотека</p>
+          <h1 id="hero-title">Книги для самостоятельного обучения</h1>
+          <p>Проверьте страницу с точки зрения клавиатурной навигации и скринридера.</p>
+          <a class="hero__button" href="#books">Открыть каталог</a>
+        </div>
+      </section>
+      <section class="books-section" id="books" aria-labelledby="books-title">
+        <h2 id="books-title">Популярные книги</h2>
+        <article class="book">
+          <img src="./images/book.svg" alt="Обложка книги «Основы веб-разработки»" />
+          <div class="book__content">
+            <h3>Основы веб-разработки</h3>
+            <p>Введение в HTML и CSS.</p>
+            <a href="#about" aria-label="Подробнее о проекте и книге «Основы веб-разработки»">Подробнее</a>
+          </div>
+        </article>
+      </section>
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">О проекте</h2>
+        <p>Это учебная библиотека для самостоятельного изучения основ веб-разработки. Страница поддерживает навигацию с клавиатуры и содержит семантическую HTML-разметку.</p>
+      </section>
+    </main>
+    <footer class="footer"><p>Учебный проект «Доступная библиотека»</p></footer>
+  </body>
+</html>
